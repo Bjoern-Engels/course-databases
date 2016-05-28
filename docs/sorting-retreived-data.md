@@ -17,7 +17,7 @@ When choosing `ASC` it will go from A to Z for data with letters. And for number
 `DESC` does the complete opposite. **When you do not state any of these two, it will default to ascending.**
 
 ```sql
-SELECT name, email FROM employees ORDER BY name DESC;
+SELECT first_name, email FROM employees ORDER BY first_name DESC;
 ```
 
 ### Multiple sorting statements
@@ -25,7 +25,7 @@ SELECT name, email FROM employees ORDER BY name DESC;
 When sorting data, the chances are high that you will have the same value for something. For example, you want to sort the names of the employees but the men need to come first in the list and then the women. 
 
 ```sql
-SELECT name, gender FROM employees ORDER BY gender DESC, name;
+SELECT first_name, gender FROM employees ORDER BY gender DESC, first_name;
 ```
 
 Here will you get something like this:
