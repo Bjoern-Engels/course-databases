@@ -6,7 +6,7 @@ Or so it seems, they are actually sorted by their primary key number.
 You can solve this with the `SORT BY` statement.
 
 ```sql
-SELECT name, surname FROM employees ORDER BY name;
+SELECT first_name, last_name FROM employees ORDER BY first_name;
 ```
 Now the results will be returned in alphabetical order. (When placing `ORDER BY BINARY`, you can force the sorting to be case-sensitive) 
 
